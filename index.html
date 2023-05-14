@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <h1 id="title">Survey Form</h1>
+</head>
+
+<body>
+    <p id="description">Survey about football</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Your Name:</label>
+        <input id="name" type="text" placeholder="John Stone" required />
+        <br>
+        <label for="email" id="email-label">Your E-Mail:</label>
+        <input id="email" type="email" required placeholder="john.stone@gmail.com" />
+        <br>
+        <label for="number" id="number-label">Your Age:</label>
+        <input id="number" type="number" min="10" max="100" placeholder="21" />
+        <br>
+        <label for="dropdown" id="dropdown-label">Your Favourite Footballer:</label>
+        <select id="dropdown">
+            <option value="messi">Messi</option>
+            <option value="cr7">Ronaldo</option>
+            <option value="other">Other</option>
+        </select> <br>
+        <p>Do You play football?</p>
+        <input type="radio" name="radio" id="yes" value="yes">
+        <label for="radio">Yes</label><br>
+        <input type="radio" name="radio" id="no" value="no">
+        <label for="radio">No</label><br>
+        <p>What leagues do you like?</p>
+        <input type="checkbox" id="answer1" value="pl" name="pl">
+        <label for="pl">Premier League</label><br>
+        <input type="checkbox" id="answer1" value="ll" name="ll">
+        <label for="ll">La Liga</label><br>
+        <input type="checkbox" id="answer1" value="lu" name="lu">
+        <label for="lu">Ligue Un(1)</label><br>
+        <input type="checkbox" id="answer1" value="bl" name="bl">
+        <label for="bl">Bundesliga</label><br>
+        <input type="checkbox" id="answer1" value="sa" name="sa">
+        <label for="sa">Serie A</label><br>
+        <input type="checkbox" id="answer1" value="other" name="other">
+        <label for="other">Other</label><br>
+        <textarea name="message" rows="10" cols="30" placeholder="Additional comments about the survey">
+</textarea><br>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
